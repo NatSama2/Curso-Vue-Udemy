@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <CounterVue />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CounterVue from "./components/Counter.vue";
+CounterVue;
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CounterVue,
+  },
+};
 </script>
 
 <style>
