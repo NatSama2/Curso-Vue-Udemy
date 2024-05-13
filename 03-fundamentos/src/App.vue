@@ -1,6 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <CounterVue />
+  <CounterVue :start="5" title="Entraron" />
+  <CounterVue v-bind:start="15" />
+  <CounterVue title="Salieron" />
 </template>
 
 <script>
