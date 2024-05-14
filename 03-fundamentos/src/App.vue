@@ -1,18 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <CounterVue :start="5" title="Entraron" />
-  <CounterVue v-bind:start="15" />
-  <CounterVue title="Salieron" />
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+  <!-- <CounterVue :start="5" title="Entraron" /> -->
+  <!-- <CounterVue v-bind:start="15" /> -->
+  <!-- <CounterVue title="Salieron" /> -->
+  <Indecision />
 </template>
 
 <script>
-import CounterVue from "./components/Counter.vue";
-CounterVue;
+// import Counter from './components/Counter.vue'
+import Indecision from "./components/Indecision.vue";
 
 export default {
   name: "App",
   components: {
-    CounterVue,
+    // Counter,
+    Indecision,
   },
 };
 </script>
