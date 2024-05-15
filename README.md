@@ -4,7 +4,7 @@
 
 ## Índice
 
-1. [Proyectos](#proyectos)
+1. [Proyectos del Curso](#proyectos-del-curso)
 2. [Sobre el Curso](#sobre-el-curso)
 3. [Lo que Aprenderás](#lo-que-aprenderás)
 4. [Requisitos](#requisitos)
