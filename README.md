@@ -1,4 +1,9 @@
-# Curso de Vue.js - Udemy
+<h1>
+  <img src="logo.png" alt="Logo" width="100" height="100" align="left">
+  Curso de Vue.js - Udemy
+</h1>
+<br>
+<br>
 
 ¡Bienvenido a mi repositorio del curso de Vue.js dictado por Fernando Herrera en Udemy! Aquí encontrarás todos los proyectos y ejercicios que realizo durante el curso.
 
