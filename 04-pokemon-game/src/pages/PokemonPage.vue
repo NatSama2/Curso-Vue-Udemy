@@ -90,10 +90,13 @@ export default {
       }
     },
     nextQuestion() {
-      this.showPokemon = false;
-      this.showAnswer = false;
-      this.selected = false;
-      this.mixPokemonArray();
+      if (!this.gameOver) {
+        this.pokemon = null; // Restablecer pokemon a null
+        this.showPokemon = false;
+        this.showAnswer = false;
+        this.selected = false;
+        this.mixPokemonArray();
+      }
     },
     resetGame() {
       this.score = 0;
@@ -103,6 +106,7 @@ export default {
     },
 
     newGame() {
+      this.pokemon = null;
       this.showPokemon = false;
       this.showAnswer = false;
       this.pokemonArr = [];
