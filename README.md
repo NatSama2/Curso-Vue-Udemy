@@ -25,10 +25,10 @@
 - **Descripción**: Una aplicación simple que te ayuda a tomar decisiones al hacer preguntas de sí o no. Utiliza la API de yesno.wtf para obtener respuestas aleatorias y muestra una imagen relacionada con la respuesta.
 - **Demo**: [https://indecision-game.vercel.app/](#)
 
-### Proyecto 2: [Nombre del Proyecto]
+### Proyecto 2: Pokemon-Game App
 
-- **Descripción**: [Breve descripción del proyecto]
-- **Demo**: [Enlace a la demo del proyecto]
+- **Descripción**: Una aplicación de preguntas y respuestas sobre Pokémon. Presenta una imagen sombreada de un Pokémon y ofrece opciones para adivinar su nombre. Lleva un registro del puntaje y muestra el total de aciertos después de 10 preguntas. Permite reiniciar el juego para jugar nuevamente.
+- **Demo**: [https://pokegame-vue3.vercel.app/](#)
 
 ### Proyecto 3: [Nombre del Proyecto]
 
@@ -71,7 +71,7 @@ Este curso tiene como objetivo enseñarte Vue.js desde cero, pero incluso si ya 
 ## Recursos Útiles
 
 - [Documentación oficial de Vue.js](https://vuejs.org/)
-- [Curso en Udemy - Vue.js por Fernando Herrera](https://www.udemy.com/course/vue-js-fh/)
+- [Curso en Udemy - Vue.js por Fernando Herrera](https://www.udemy.com/share/104WIg3@sK0ZJWC0gQPb9joT3t2e7dg4HSQ-XXis8Uv4kRNQsDC6jNw46pBTQ6WYTBaq35n2yA==/)
 
 ## ¿Cómo Contribuir?
 
