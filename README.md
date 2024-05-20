@@ -71,7 +71,7 @@ Este curso tiene como objetivo enseñarte Vue.js desde cero, pero incluso si ya 
 ## Recursos Útiles
 
 - [Documentación oficial de Vue.js](https://vuejs.org/)
-- [Curso en Udemy - Vue.js por Fernando Herrera](https://www.udemy.com/share/104WIg3@sK0ZJWC0gQPb9joT3t2e7dg4HSQ-XXis8Uv4kRNQsDC6jNw46pBTQ6WYTBaq35n2yA==/)
+- [Curso en Udemy - Vue.js por Fernando Herrera](https://www.udemy.com/course/vuejs-fh/learn/)
 
 ## ¿Cómo Contribuir?
 
