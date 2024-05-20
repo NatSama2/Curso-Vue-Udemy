@@ -8,7 +8,11 @@
 
     <!--Todo Opciones-->
 
-    <PokemonOptions :pokemons="pokemonArr" @selection-pokemon="checkAnswer" />
+    <PokemonOptions
+      v-if="!selected"
+      :pokemons="pokemonArr"
+      @selection-pokemon="checkAnswer"
+    />
 
     <template v-if="showAnswer">
       <h2 class="fade-in">{{ message }}</h2>
@@ -38,6 +42,7 @@ export default {
       showPokemon: false,
       showAnswer: false,
       message: "",
+      selected: false,
     };
   },
   methods: {
@@ -53,6 +58,7 @@ export default {
       console.log("Pokemon Page llamado", selectedId);
       this.showPokemon = true;
       this.showAnswer = true;
+      this.selected = true;
 
       if (selectedId === this.pokemon.id) {
         this.message = `Correcto, ${this.pokemon.name}`;
@@ -65,6 +71,7 @@ export default {
       this.showAnswer = false;
       this.pokemonArr = [];
       this.pokemon = null;
+      this.selected = false;
       this.mixPokemonArray();
     },
   },
