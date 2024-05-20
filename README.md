@@ -23,12 +23,12 @@
 ### Proyecto 1: Indecision-Game App
 
 - **Descripción**: Una aplicación simple que te ayuda a tomar decisiones al hacer preguntas de sí o no. Utiliza la API de yesno.wtf para obtener respuestas aleatorias y muestra una imagen relacionada con la respuesta.
-- **Demo**: [https://indecision-game.vercel.app/](#)
+- **Demo**: [Indecision-Game Demo](https://indecision-game.vercel.app/)
 
 ### Proyecto 2: Pokemon-Game App
 
 - **Descripción**: Una aplicación de preguntas y respuestas sobre Pokémon. Presenta una imagen sombreada de un Pokémon y ofrece opciones para adivinar su nombre. Lleva un registro del puntaje y muestra el total de aciertos después de 10 preguntas. Permite reiniciar el juego para jugar nuevamente.
-- **Demo**: [https://pokegame-vue3.vercel.app/](#)
+- **Demo**: [Pokemon-Game Demo](https://pokegame-vue3.vercel.app/)
 
 ### Proyecto 3: [Nombre del Proyecto]
 
