@@ -1,12 +1,20 @@
 <template>
-  <h1>¿Quien es este pokémon?</h1>
+  <h1 v-if="!pokemon">Espere por favor...</h1>
+  <div v-else>
+    <h1>¿Quien es este pokémon?</h1>
 
-  <!--TODO img-->
-  <PokemonPicture :pokemonId="4" :showPokemon="true" />
+    <!--TODO img-->
+    <PokemonPicture :pokemon-id="pokemon.id" :show-pokemon="showPokemon" />
 
-  <!--Todo Opciones-->
+    <!--Todo Opciones-->
 
-  <PokemonOptions :pokemons="pokemonArr" />
+    <PokemonOptions :pokemons="pokemonArr" @selection-pokemon="checkAnswer" />
+
+    <template v-if="showAnswer">
+      <h2 class="fade-in">{{ message }}</h2>
+      <button @click="newGame">Siguiente</button>
+    </template>
+  </div>
 </template>
 
 <script>
@@ -26,12 +34,38 @@ export default {
   data() {
     return {
       pokemonArr: [],
+      pokemon: null,
+      showPokemon: false,
+      showAnswer: false,
+      message: "",
     };
   },
   methods: {
     async mixPokemonArray() {
       this.pokemonArr = await getPokemonOptions();
-      console.log("this.pokemonArr", this.pokemonArr);
+      // console.log("this.pokemonArr", this.pokemonArr);
+
+      const rndInt = Math.floor(Math.random() * 4);
+      // console.log("rndInt", rndInt);
+      this.pokemon = this.pokemonArr[rndInt];
+    },
+    checkAnswer(selectedId) {
+      console.log("Pokemon Page llamado", selectedId);
+      this.showPokemon = true;
+      this.showAnswer = true;
+
+      if (selectedId === this.pokemon.id) {
+        this.message = `Correcto, ${this.pokemon.name}`;
+      } else {
+        this.message = `Oops, era ${this.pokemon.name}`;
+      }
+    },
+    newGame() {
+      this.showPokemon = false;
+      this.showAnswer = false;
+      this.pokemonArr = [];
+      this.pokemon = null;
+      this.mixPokemonArray();
     },
   },
   mounted() {
